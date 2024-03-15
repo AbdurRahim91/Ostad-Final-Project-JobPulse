@@ -1,0 +1,102 @@
+/*---------------------
+  Initial Style
+---------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+p{
+    margin: 0;
+}
+
+.text-primary{
+    color: #5f9ea0 !important;
+}
+
+.bg-primary, .btn-primary{
+    background: #5f9ea0 !important;
+    border-color: #5f9ea0 !important;
+}
+
+.btn-primary:hover{
+    background: #519497 !important;
+    border-color: #519497 !important;
+}
+
+/*---------------------
+  Navigation Menu Style
+---------------------*/
+#topbar .navbar-brand {
+    font-size: 1.5rem;
+    max-width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.navbar-brand img{
+    width: 100%;
+}
+
+#topbar .navbar-nav .nav-link {
+    color: #000;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#topbar .nav-item{
+    border-radius: 2rem;
+}
+
+#topbar .navbar-nav .nav-item:hover{
+    background-color: #a3d8da;
+    transition: all 0.3s ease;
+}
+
+#topbar .signup{
+    color: #424242;
+    text-transform: none;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 6px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.company_logo img{
+    max-height: 120px;
+}
+
+.jobdetails_summary .card, .joblist_item .card{
+    background-color: #F4F4F4;
+}
+
+
+/* all_jobs page style */
+.joblist_item .card{
+    cursor: pointer;
+    color: #424242;
+}
+
+.joblist_item .card:hover{
+    box-shadow: 0 0 5px 0px #a9a9a9;
+}
+
+.joblist_item .card a:hover{
+    text-decoration: underline !important;
+}
+.card a{
+    overflow: hidden;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #topbar .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
