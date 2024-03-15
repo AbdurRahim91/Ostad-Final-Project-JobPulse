@@ -13,7 +13,7 @@ class UserController extends Controller
     {
         $userlist= User::orderBy('id', 'desc')->get();
        // dd('$jobscategories');
-         return view('backend.admin.pages.user_list', compact('userlist'));
+        return view('dashboard.pages.admin.user_list', compact('userlist'));
     }
     /**
      * Show the form for creating a new resource.
