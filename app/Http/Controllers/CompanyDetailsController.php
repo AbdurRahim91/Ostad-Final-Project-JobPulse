@@ -37,6 +37,7 @@ class CompanyDetailsController extends Controller
      */
     public function store(Request $request)
     {
+        $auth_id = auth()->user()->id;
         $request->validate([
             'company_name' => 'required|string|max:100',
             'company_email' => 'required|email|max:100',
@@ -44,7 +45,7 @@ class CompanyDetailsController extends Controller
             'company_address' => 'required|string|max:100',
         ]);
         $com_details = CompanyInfo::create([
-            'user_id'=> $request->input('user_id'),
+             'user_id'=> $auth_id,
             'company_name' => $request->input('company_name'),
             'company_email' => $request->input('company_email'),
             'company_contact' => $request->input('company_contact'),
